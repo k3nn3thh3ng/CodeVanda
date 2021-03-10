@@ -21,8 +21,8 @@
 	"production-js": "cd Client && serve -s build",
     "backend-start": "node server.js",
     "start": "concurrently \"npm-run-all -p backend-start start-js\"",
-    "build": "concurrently \"npm-run-all -p backend-start build-js\"",
-	"production": "concurrently \"npm-run-all -p backend-start production-js\"",
+    "production": "concurrently \"npm-run-all -p backend-start build-js\"",
+	"build": "concurrently \"npm-run-all -p backend-start production-js\"",
     "test": "cd Client && npm test",
     "eject": "cd Client && npm eject"
   },
