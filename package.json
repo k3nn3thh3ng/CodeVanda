@@ -4,6 +4,7 @@
   "description": "Container for both front-end and server",
   "main": "server.js",
   "dependencies": {
+	"node": "^10.16.3",
     "concurrently": "^6.0.0",
     "express": "^4.17.1",
     "history": "^5.0.0",
