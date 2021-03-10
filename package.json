@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
 	"node": "^10.16.3",
+	"npm": "^6.11.3",
     "concurrently": "^6.0.0",
     "express": "^4.17.1",
     "history": "^5.0.0",
