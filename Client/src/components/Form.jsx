@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { TextField, Paper, Typography, Grid, Button, FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
 import { withStyles, createStyles } from '@material-ui/core/styles';
+import { withRouter } from 'react-router-dom'
 
 
 const styles = (theme) => createStyles({
@@ -66,13 +67,22 @@ function Form(props){
 	
 	const handleInputChange = e => {
 		const { name, value } = e.target;
-		
+		console.log(name);
+		console.log(value);
+		console.log(values);
 		setValues({
 			...values,
 			[name]:value
 		})
 	}
 	
+	const preventDefault = (event) => event.preventDefault();
+	
+	const handleSubmit = () => {
+		//should add axios function to export enquiry
+		setValues(initialValues);
+		props.history.push('/')
+	}
 	
 	return(
 		<React.Fragment>
@@ -85,7 +95,7 @@ function Form(props){
 						All enquiries will be replied within the next 24 hours
 					</Typography>
 				</Grid>
-				<form className={classes.form}>
+				<form className={classes.form} onSubmit={preventDefault}>
 					<FormControl variant="outlined" className={classes.formInput}>
 						<InputLabel id="type">Enquiry Type</InputLabel>
 						<Select
@@ -118,7 +128,7 @@ function Form(props){
 						name="email"
 						id="email"
 						label="Email"
-						defaultValue={values.email}
+						value={values.email}
 						variant="outlined"
 						onChange={handleInputChange}
 						className={classes.formInput}
@@ -129,12 +139,12 @@ function Form(props){
 						label="Message"
 						multiline
 						rows={4}
-						defaultValue={values.message}
+						value={values.message}
 						variant="outlined"
 						onChange={handleInputChange}
 						className={classes.formInput}
 					/>	
-					<Button variant="contained" disableElevation className={`${classes.button} ${classes.primary}`}>
+					<Button variant="contained" disableElevation className={`${classes.button} ${classes.primary}`} onClick={handleSubmit}>
 						Submit
 					</Button>
 				</form>
@@ -143,4 +153,4 @@ function Form(props){
 	)
 }
 
-export default withStyles(styles)(Form);
+export default withStyles(styles)(withRouter(Form));

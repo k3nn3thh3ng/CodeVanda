@@ -5,6 +5,7 @@ import {
 	Typography,
 	Paper,
 	Icon,
+	Link as MUILink
 } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
@@ -69,13 +70,15 @@ const styles = (theme) => ({
 	},
 	underline: {
 		cursor: 'pointer'
-	}
+	},
+	link: {
+		textDecoration: 'none'
+	},
 })
 
 function ContactSectionOne(props) {
 	
 	const { classes } = props;
-	
 	
 	return(
 		<React.Fragment>
@@ -132,9 +135,11 @@ function ContactSectionOne(props) {
 									</Typography>
 								</Grid>
 								<Grid container justify="center" className={classes.cTAWrapper}>
-									<Button disableElevation variant="contained" className={`${classes.button} ${classes.primary}`}>
-										Choose a date &amp; time
-									</Button>
+									<MUILink href="https://codevanda.setmore.com/" underline="none">
+										<Button disableElevation variant="contained" className={`${classes.button} ${classes.primary}`}>
+											Choose a date &amp; time
+										</Button>
+									</MUILink>
 								</Grid>
 							</Grid>
 						</Paper>

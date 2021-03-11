@@ -59,7 +59,7 @@ function HPSectionOne(props) {
 		<Grid container justify="center" className={classes.main}>
 			<Grid container direction="column" alignItems="center" className={classes.container}>
 				<Typography variant="h4" color="inherit" className={classes.header}>
-					Build Today. Scale Tommorrow.
+					Build Today. Scale Tomorrow.
 				</Typography>
 				<Typography variant="body1" component="p" color="inherit" className={classes.paragraph}>
 					CodeVanda develops web applications for all purposes. We can help you start an e-commerce business, setup website funnels, or build a powerful website. With CodeVanda you can start building your website today and scale up for tomorrow.
