@@ -125,7 +125,7 @@ const webFrontEnd = {
 	cards: [
 		{
 			type: "Basic",
-			price: "140",
+			price: "700",
 			pricingUnit: "page",
 			preBuildRev: "Unlimited",
 			postBuildRev: "4",
@@ -167,7 +167,7 @@ const webFrontEnd = {
 		},
 		{
 			type: "Premium",
-			price: "330",
+			price: "1080",
 			pricingUnit: "page",
 			preBuildRev: "Unlimited",
 			postBuildRev: "3",
@@ -218,7 +218,7 @@ const webBackEnd = {
 	cards: [
 		{
 			type: "Basic",
-			price: "1,000",
+			price: "4,400",
 			pricingUnit: "set of routes",
 			preBuildRev: "2",
 			postBuildRev: "1",
@@ -258,7 +258,7 @@ const webBackEnd = {
 		},
 		{
 			type: "Premium",
-			price: "2,500",
+			price: "6,600",
 			pricingUnit: "set of routes",
 			preBuildRev: "2",
 			postBuildRev: "1",
@@ -306,7 +306,7 @@ const webMaintenance = {
 	cards: [
 		{
 			type: "Front-End Maintenance",
-			price: "150",
+			price: "300",
 			pricingUnit: "month",
 			eligibility: true,
 			features: [
@@ -329,7 +329,7 @@ const webMaintenance = {
 		},
 		{
 			type: "Back-End Maintenance",
-			price: "220",
+			price: "450",
 			pricingUnit: "month",
 			eligibility: true,
 			features: [

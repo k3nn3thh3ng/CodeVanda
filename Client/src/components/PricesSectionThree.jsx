@@ -81,7 +81,7 @@ function PricesSectionThree(props) {
 					<Grid container direction="column" alignItems="center" className={classes.packageWrapper}>
 						<Grid container className={classes.highlightWrapper}>
 							<Typography variant="body2" className={classes.highlight}>
-								To support small businesses through this uncertain time, we're reducing the cost of our Startup Growth Suite from S$2,700/project to S$1,600/project with unlimited revision within 7 days of completion.
+								To support small businesses through this uncertain time, we're reducing the cost of our Startup Growth Suite from S$15,500/project to S$9,300/project with unlimited revision within 7 days of completion.
 							</Typography>
 						</Grid>
 						<Grid justify="space-between" container className={classes.cTAWrapper}>
@@ -99,12 +99,12 @@ function PricesSectionThree(props) {
 								<Grid container direction="column" className={classes.priceWrapper}>
 									<Grid container className={classes.priceSubHeaderWrapper}>
 										<Typography variant="subtitle2">
-											Starts at <strike>S$4,850</strike>
+											Starts at <strike>S$15,500</strike>
 										</Typography>
 									</Grid>
 									<Grid container className={classes.priceHeaderWrapper}>
 										<Typography gutterBottom variant="h6" className={classes.priceHeader}>
-											S$2,600/ proj
+											S$9,300/ proj
 										</Typography>
 									</Grid>
 								</Grid>
