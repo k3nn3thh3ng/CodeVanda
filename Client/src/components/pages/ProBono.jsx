@@ -1,9 +1,7 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
 import { withStyles, createStyles } from '@material-ui/core/styles';
 
-import Appbar from '../Appbar';
-import Footer from '../Footer';
+import Boiler from '../Boiler';
 
 import ProBonoSectionOne from '../ProBonoSectionOne';
 import ProBonoSectionTwo from '../ProBonoSectionTwo';
@@ -20,17 +18,15 @@ const styles = (theme) => createStyles({
 
 function ProBono(props){
 	
-	const { classes } = props
+	// const { classes } = props
 	
 	
 	return (
-		<Grid className={classes.main}>
-			<Appbar />
+		<Boiler>
 			<ProBonoSectionOne />
 			<ProBonoSectionTwo />
 			<ProBonoSectionThree />
-			<Footer position="relative"/>
-		</Grid>
+		</Boiler>
 	)
 }
 

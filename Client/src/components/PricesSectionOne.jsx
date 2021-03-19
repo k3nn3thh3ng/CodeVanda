@@ -124,27 +124,18 @@ const webFrontEnd = {
 	subHeader: "We will build a aesthetically appealing website for you.",
 	cards: [
 		{
-			type: "Basic",
-			price: "700",
-			pricingUnit: "page",
+			type: "Web Builder  (Shoppify & Wix)",
+			price: "540",
+			pricingUnit: "section*",
 			preBuildRev: "Unlimited",
-			postBuildRev: "4",
+			postBuildRev: "1",
 			features: [
 				{
 					featureHeader: "Key features",
 					featureBody: [
-						"Responsive design supporting all device",
-						"Content/Image upload assistance",
-						"Source code ownership",
-						"Complimentary 7 days front-end maintenance package",
-					]
-				},
-				{
-					featureHeader: "CodeVanda's commitment",
-					featureBody: [
-						"Includes web page sketch (Wireframe) ",
-						"Access to development sandbox",
-						"Collaboration rights to Figma project",
+						"Copy Writing",
+						"Up to 3 content pieces per section",
+						"Complimentary 1 month front-end maintenance package",
 					]
 				},
 				{
@@ -161,6 +152,11 @@ const webFrontEnd = {
 						"Search input",
 						"Image",
 						"Transitions"
+					]
+				},
+				{
+					featureHeader: "*Does not include prevailing monthly subscription of CMS",
+					featureBody: [
 					]
 				},
 			]
@@ -351,3 +347,45 @@ const webMaintenance = {
 		}
 	]
 }
+
+// In case want to change the CMS front-end option to Basic
+// type: "Basic",
+// 			price: "700",
+// 			pricingUnit: "page",
+// 			preBuildRev: "Unlimited",
+// 			postBuildRev: "4",
+// 			features: [
+// 				{
+// 					featureHeader: "Key features",
+// 					featureBody: [
+// 						"Responsive design supporting all device",
+// 						"Content/Image upload assistance",
+// 						"Source code ownership",
+// 						"Complimentary 7 days front-end maintenance package",
+// 					]
+// 				},
+// 				{
+// 					featureHeader: "CodeVanda's commitment",
+// 					featureBody: [
+// 						"Includes web page sketch (Wireframe) ",
+// 						"Access to development sandbox",
+// 						"Collaboration rights to Figma project",
+// 					]
+// 				},
+// 				{
+// 					featureHeader: "Delivery time",
+// 					featureBody: [
+// 						"Up to 3 days"
+// 					]
+// 				},
+// 				{
+// 					featureHeader: "Customisation possibility",
+// 					featureBody: [
+// 						"App bar",
+// 						"Button",
+// 						"Search input",
+// 						"Image",
+// 						"Transitions"
+// 					]
+// 				},
+// 			]

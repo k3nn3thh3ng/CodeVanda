@@ -1,9 +1,8 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 
-import Footer from '../Footer';
+import Boiler from '../Boiler';
 import HeroBanner from '../HeroBannerHomeP';
-import Appbar from '../Appbar';
 import HPSectionOne from '../HPSectionOne';
 import HPSectionTwo from '../HPSectionTwo';
 import HPSectionThree from '../HPSectionThree';
@@ -18,16 +17,14 @@ const styles = (theme) => ({
 function Home(props){
 	
 	return(
-		<React.Fragment>
-			<Appbar />
+		<Boiler>
 			<HeroBanner message="Home"/>
 			<HPSectionOne />
 			<HPSectionTwo />
 			<HPSectionThree />
 			<HPSectionFour />
 			<HPSectionFive />
-			<Footer />
-		</React.Fragment>
+		</Boiler>
 	)
 }
 

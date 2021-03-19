@@ -1,9 +1,7 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
-import Appbar from '../Appbar';
-import Footer from '../Footer';
+import Boiler from '../Boiler';
 import PricesSectionOne from '../PricesSectionOne';
 import PricesSectionThree from '../PricesSectionThree';
 import PricesSectionFour from '../PricesSectionFour';
@@ -18,16 +16,14 @@ const styles = {
 }
 
 function Prices(props) {
-	const {classes} = props;
+	// const {classes} = props;
 	
 	return (
-		<Grid className={classes.main}>
-			<Appbar />
+		<Boiler>
 			<PricesSectionOne />
 			<PricesSectionThree />
 			<PricesSectionFour />
-			<Footer />
-		</Grid>
+		</Boiler>
 	);
 	
 }

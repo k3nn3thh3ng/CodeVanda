@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
@@ -21,12 +21,12 @@ function AppbarRight(props) {
 	
 	const list = [
 		{
-			linkto : "/prices",
-			id: "Prices"
-		},
-		{
 			linkto : "/probono",
 			id: "Pro Bono"
+		},
+		{
+			linkto : "/prices",
+			id: "Prices"
 		},
 	];
 	

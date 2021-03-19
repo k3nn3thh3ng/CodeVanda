@@ -1,9 +1,7 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
-import Appbar from '../Appbar';
-import Footer from '../Footer';
+import Boiler from '../Boiler';
 // import FrontEndBreadCrumbNav from '../FrontEndBreadCrumbNav';
 import FrontEndSectionOne from '../FrontEndSectionOne';
 import FrontEndSectionTwo from '../FrontEndSectionTwo';
@@ -22,19 +20,17 @@ const styles = {
 }
 
 function FrontendWebDevelopment(props) {
-	const {classes} = props;
+	// const {classes} = props;
 	
 	return (
-		<Box className={classes.background}>
-			<Appbar />
+		<Boiler>
 			<FrontEndSectionOne />
 			<FrontEndSectionTwo />
 			<FrontEndSectionThree />
 			<FrontEndSectionFour />
 			<FrontEndSectionFive />
 			<FrontEndSectionSix />
-			<Footer />
-		</Box>
+		</Boiler>
 	);
 	
 // 	<FrontEndBreadCrumbNav />
